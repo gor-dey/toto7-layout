@@ -8,17 +8,17 @@ new Swiper(".swiper", {
 });
 // SWIPER MOBILE WINNERS END
 
-const swiperValue = document.getElementsByClassName("swiper--ticket");
-const innerWidthNow = window.innerWidth;
+// const swiperValue = document.getElementsByClassName("swiper--ticket");
+// const innerWidthNow = window.innerWidth;
 //* console.log(innerWidthNow);
 //* console.log(swiperValue);
 
 // target.addEventListener(type, listener[, options]);
 
 // SWIPER MOBILE TICKET START
-if (innerWidthNow >= 768) {
-  swiperValue.classList.remove("swiper--ticket--js");
-}
+// if (innerWidthNow >= 768) {
+//   swiperValue.classList.remove("swiper--ticket--js");
+// }
 
 // if (innerWidthNow >= 768) {
 //   swiperValue.classList.add("swiper--ticket--js");

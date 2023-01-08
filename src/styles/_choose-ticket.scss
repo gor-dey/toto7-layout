@@ -1,3 +1,7 @@
+.choose-ticket--tablet {
+  display: none;
+}
+
 .choose-ticket {
   width: 100%;
   // max-width: 420px;
@@ -137,6 +141,12 @@
 }
 
 @media (min-width: 768px) {
+  .choose-ticket {
+    display: none;
+  }
+  .choose-ticket--tablet {
+    display: block;
+  }
   .choose-ticket__wrapper--ticket {
     display: flex;
     width: 100%;
