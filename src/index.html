@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT FROM 'GOOGLE FONTS' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
+    <title>TOTO7</title>
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header class="header">
+      <img class="header__logo" src="./img/image 6.svg" alt="logo" />
+      <!-- <div class="header__space"></div> -->
+      <button id="header__about-us" class="header__button">О НАС</button>
+      <button id="header__enter" class="header__button">Вход</button>
+      <button id="header__registration" class="header__button">
+        Регистрация
+      </button>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- ASIDE ENTER START -->
+    <aside class="enter">
+      <div class="enter__img asaid--img">
+        <img src="./img/Rectangle 2.png" alt="backgroung" />
+        <div>
+          TOTO<span>7 - </span>
+          твоя счастливая ставка!
+        </div>
+      </div>
+      <div class="enter__main--flex">
+        <div class="enter__main">
+          <span>Вход</span>
+          <span>Регистрация</span>
+          <label for="enter__email">Укажите Ваш e-mail</label>
+          <label for="enter__password">Введите пароль</label>
+          <input
+            id="enter__email"
+            type="email"
+            placeholder=" User@domain.com"
+          />
+          <input id="enter__password" type="password" placeholder=" Пароль" />
+          <input id="enter__remember" type="checkbox" />
+          <label for="enter__remember">Запомнить меня</label>
+          <button class="enter__enter">Войти</button>
+          <div>Забыли пароль?</div>
+        </div>
+      </div>
+    </aside>
+    <!-- ASIDE ENTER END -->
+
+    <!-- ASIDE REGISTRATION START -->
+    <aside class="registration">
+      <div class="registration__img asaid--img">
+        <img src="./img/Rectangle 2.png" alt="backgroung" />
+        <div>
+          TOTO<span>7 - </span>
+          твоя счастливая ставка!
+        </div>
+      </div>
+      <div class="registration__main--flex">
+        <div class="registration__main">
+          <span>Регистрация</span>
+          <label for="registration__email">Укажите Ваш e-mail</label>
+          <label for="registration__FIO">Укажите Ваши ФИО</label>
+          <input
+            id="registration__email"
+            type="email"
+            placeholder=" User@domain.com"
+          />
+          <input
+            id="registration__FIO"
+            type="text"
+            placeholder=" Фамилия Имя Отчество"
+          />
+          <label for="registration__password">Придумайте пароль</label>
+          <label for="registration__FIO">Укажите дату рождения</label>
+          <input
+            id="registration__password"
+            type="password"
+            placeholder=" Пароль"
+          />
+          <input type="date" placeholder="" />
+          <label for="registration__password-after-time"
+            >Повторите пароль</label
+          >
+          <label for="registration__select-region"
+            >Выберете регион проживания</label
+          >
+          <input
+            id="registration__password-after-time"
+            type="password"
+            placeholder=" Пароль еще раз"
+          />
+          <select
+            name="registration__password-after-time"
+            id="registration__password-after-time"
+          >
+            <option value="adygeja">Адыгея</option>
+            <option value="spb">Санкт-Петербург</option>
+            <option value="moskow">Москва</option>
+            <option value="ekb">Екатеринбург</option>
+          </select>
+          <label for="registration__phone">Номер телефона</label>
+          <input
+            id="registration__phone"
+            type="phone"
+            placeholder=" Номер телефона"
+          />
+          <input id="registration__rules-on-site" type="checkbox" />
+          <label for="registration__rules-on-site"
+            >Я прочитал и понимаю
+            <a class="registration__rules-on-site--link"
+              >Условия использования Сайта</a
+            >, а так же подтверждаю, что мне испольнилось 18 лет</label
+          >
+          <button class="registration__registration">Зарегистрироваться</button>
+        </div>
+      </div>
+    </aside>
+    <!-- ASIDE REGISTRATION END -->
+
+    <main>
+      <div class="main-img">
+        <img src="./img/Rectangle 2.png" alt="backgroung" />
+        <div>
+          TOTO<span>7 - </span>
+          твоя счастливая ставка!
+        </div>
+      </div>
+      <!-- SLIDER MOBILE START -->
+      <div class="winners">
+        <div class="winners__text">Победители</div>
+
+        <div class="winners__slider image-slider swiper-container swiper">
+          <div class="image-slider__wrapper swiper-wrapper">
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image _authorized-user">
+                <div class="image-slider-image__data">И.К.</div>
+                <div class="image-slider-image__data">Иван К.</div>
+                <div class="image-slider-image__data">+ 15 000 р.</div>
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <div class="image-slider-image__data">И.К.</div>
+                <div class="image-slider-image__data">Иван К.</div>
+                <div class="image-slider-image__data">+ 15 000 р.</div>
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <div class="image-slider-image__data">И.К.</div>
+                <div class="image-slider-image__data">Иван К.</div>
+                <div class="image-slider-image__data">+ 15 000 р.</div>
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <div class="image-slider-image__data">И.К.</div>
+                <div class="image-slider-image__data">Иван К.</div>
+                <div class="image-slider-image__data">+ 15 000 р.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SLIDER MOBILE END -->
+
+      <div class="events">
+        <div class="events__text">События</div>
+        <div class="events__cards">
+          <div class="events__card">
+            <div class="events__card__header">
+              <img src="./img/Vector.svg" alt="Vector" />
+              <div class="events__game-and-league">
+                <p class="events__game">Футбол:&nbsp</p>
+                <p class="events__league">Кубок Англии</p>
+              </div>
+              <div class="events__date">
+                <p class="events__date--year">2022</p>
+                <p class="events__date--month">/04</p>
+                <p class="events__date--day">/25</p>
+              </div>
+              <div class="events__time">
+                <p class="events__time--time">12:00</p>
+              </div>
+            </div>
+            <div class="events__card__body">
+              <div class="events__teams">
+                <div class="events__team">
+                  <img src="./img/image 1.svg" alt="L.F.C." />
+                  <p class="events team-1--text">Ливерпуль</p>
+                </div>
+                <div class="events__team">
+                  <img src="./img/image 2.svg" alt="M.U." />
+                  <p class="events team-2--text">Манчестер Юнайтед</p>
+                </div>
+              </div>
+              <div class="events__results">
+                <div class="events__win-1">Победа</div>
+                <div class="events__draw _real-result">Ничья</div>
+                <div class="events__win-2">Победа</div>
+              </div>
+            </div>
+          </div>
+          <div class="events__card">
+            <div class="events__card__header">
+              <img src="./img/Vector.svg" alt="Vector" />
+              <div class="events__game-and-league">
+                <p class="events__game">Футбол:&nbsp</p>
+                <p class="events__league">Кубок Англии</p>
+              </div>
+              <div class="events__date">
+                <p class="events__date--year">2022</p>
+                <p class="events__date--month">/04</p>
+                <p class="events__date--day">/25</p>
+              </div>
+              <div class="events__time">
+                <p class="events__time--time">12:00</p>
+              </div>
+            </div>
+            <div class="events__card__body">
+              <div class="events__teams">
+                <div class="events__team">
+                  <img src="./img/image 1.svg" alt="L.F.C." />
+                  <p class="events team-1--text">Ливерпуль</p>
+                </div>
+                <div class="events__team">
+                  <img src="./img/image 2.svg" alt="M.U." />
+                  <p class="events team-2--text">Манчестер Юнайтед</p>
+                </div>
+              </div>
+              <div class="events__results">
+                <div class="events__win-1">Победа</div>
+                <div class="events__draw">Ничья</div>
+                <div class="events__win-2 _real-result">Победа</div>
+              </div>
+            </div>
+          </div>
+          <div class="events__card">
+            <div class="events__card__header">
+              <img src="./img/Vector.svg" alt="Vector" />
+              <div class="events__game-and-league">
+                <p class="events__game">Футбол:&nbsp</p>
+                <p class="events__league">Кубок Англии</p>
+              </div>
+              <div class="events__date">
+                <p class="events__date--year">2022</p>
+                <p class="events__date--month">/04</p>
+                <p class="events__date--day">/25</p>
+              </div>
+              <div class="events__time">
+                <p class="events__time--time">12:00</p>
+              </div>
+            </div>
+            <div class="events__card__body">
+              <div class="events__teams">
+                <div class="events__team">
+                  <img src="./img/image 1.svg" alt="L.F.C." />
+                  <p class="events team-1--text">Ливерпуль</p>
+                </div>
+                <div class="events__team">
+                  <img src="./img/image 2.svg" alt="M.U." />
+                  <p class="events team-2--text">Манчестер Юнайтед</p>
+                </div>
+              </div>
+              <div class="events__results">
+                <div class="events__win-1 _real-result">Победа</div>
+                <div class="events__draw">Ничья</div>
+                <div class="events__win-2">Победа</div>
+              </div>
+            </div>
+          </div>
+          <div class="events__card">
+            <div class="events__card__header">
+              <img src="./img/Vector.svg" alt="Vector" />
+              <div class="events__game-and-league">
+                <p class="events__game">Футбол:&nbsp</p>
+                <p class="events__league">Кубок Англии</p>
+              </div>
+              <div class="events__date">
+                <p class="events__date--year">2022</p>
+                <p class="events__date--month">/04</p>
+                <p class="events__date--day">/25</p>
+              </div>
+              <div class="events__time">
+                <p class="events__time--time">12:00</p>
+              </div>
+            </div>
+            <div class="events__card__body">
+              <div class="events__teams">
+                <div class="events__team">
+                  <img src="./img/image 1.svg" alt="L.F.C." />
+                  <p class="events team-1--text">Ливерпуль</p>
+                </div>
+                <div class="events__team">
+                  <img src="./img/image 2.svg" alt="M.U." />
+                  <p class="events team-2--text">Манчестер Юнайтед</p>
+                </div>
+              </div>
+              <div class="events__results">
+                <div class="events__win-1">Победа</div>
+                <div class="events__draw _real-result">Ничья</div>
+                <div class="events__win-2">Победа</div>
+              </div>
+            </div>
+          </div>
+          <div class="events__card">
+            <div class="events__card__header">
+              <img src="./img/Vector.svg" alt="Vector" />
+              <div class="events__game-and-league">
+                <p class="events__game">Футбол:&nbsp</p>
+                <p class="events__league">Кубок Англии</p>
+              </div>
+              <div class="events__date">
+                <p class="events__date--year">2022</p>
+                <p class="events__date--month">/04</p>
+                <p class="events__date--day">/25</p>
+              </div>
+              <div class="events__time">
+                <p class="events__time--time">12:00</p>
+              </div>
+            </div>
+            <div class="events__card__body">
+              <div class="events__teams">
+                <div class="events__team">
+                  <img src="./img/image 1.svg" alt="L.F.C." />
+                  <p class="events team-1--text">Ливерпуль</p>
+                </div>
+                <div class="events__team">
+                  <img src="./img/image 2.svg" alt="M.U." />
+                  <p class="events team-2--text">Манчестер Юнайтед</p>
+                </div>
+              </div>
+              <div class="events__results">
+                <div class="events__win-1">Победа</div>
+                <div class="events__draw _real-result">Ничья</div>
+                <div class="events__win-2">Победа</div>
+              </div>
+            </div>
+          </div>
+          <div class="events__card">
+            <div class="events__card__header">
+              <img src="./img/Vector.svg" alt="Vector" />
+              <div class="events__game-and-league">
+                <p class="events__game">Футбол:&nbsp</p>
+                <p class="events__league">Кубок Англии</p>
+              </div>
+              <div class="events__date">
+                <p class="events__date--year">2022</p>
+                <p class="events__date--month">/04</p>
+                <p class="events__date--day">/25</p>
+              </div>
+              <div class="events__time">
+                <p class="events__time--time">12:00</p>
+              </div>
+            </div>
+            <div class="events__card__body">
+              <div class="events__teams">
+                <div class="events__team">
+                  <img src="./img/image 1.svg" alt="L.F.C." />
+                  <p class="events team-1--text">Ливерпуль</p>
+                </div>
+                <div class="events__team">
+                  <img src="./img/image 2.svg" alt="M.U." />
+                  <p class="events team-2--text">Манчестер Юнайтед</p>
+                </div>
+              </div>
+              <div class="events__results">
+                <div class="events__win-1">Победа</div>
+                <div class="events__draw _real-result">Ничья</div>
+                <div class="events__win-2">Победа</div>
+              </div>
+            </div>
+          </div>
+          <div class="events__card">
+            <div class="events__card__header">
+              <img src="./img/Vector.svg" alt="Vector" />
+              <div class="events__game-and-league">
+                <p class="events__game">Футбол:&nbsp</p>
+                <p class="events__league">Кубок Англии</p>
+              </div>
+              <div class="events__date">
+                <p class="events__date--year">2022</p>
+                <p class="events__date--month">/04</p>
+                <p class="events__date--day">/25</p>
+              </div>
+              <div class="events__time">
+                <p class="events__time--time">12:00</p>
+              </div>
+            </div>
+            <div class="events__card__body">
+              <div class="events__teams">
+                <div class="events__team">
+                  <img src="./img/image 1.svg" alt="L.F.C." />
+                  <p class="events team-1--text">Ливерпуль</p>
+                </div>
+                <div class="events__team">
+                  <img src="./img/image 2.svg" alt="M.U." />
+                  <p class="events team-2--text">Манчестер Юнайтед</p>
+                </div>
+              </div>
+              <div class="events__results">
+                <div class="events__win-1">Победа</div>
+                <div class="events__draw _real-result">Ничья</div>
+                <div class="events__win-2">Победа</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="choose-ticket">
+        <div class="choose-ticket__text">Выберете билет</div>
+
+        <div
+          class="choose-ticket__slider image-slider swiper-container swiper--ticket swiper--ticket--js"
+        >
+          <!-- <div class="image-slider__wrapper swiper-wrapper"> -->
+          <div
+            class="image-slider__wrapper swiper-wrapper choose-ticket__wrapper--ticket"
+          >
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image__ticket">
+                <div class="image-slider-image__type-of-ticket">
+                  <img src="./img/Vector-1.svg" alt="pick" />
+                  <p>&nbsp Бронзовый</p>
+                </div>
+                <div class="image-slider-image__privileges">
+                  <p>Стоимость: 100 р.</p>
+                  <p>Выигрыш: 15 000 р.</p>
+                  <button class="choose-ticket--button">Оплатить</button>
+                </div>
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image__ticket">
+                <div
+                  class="image-slider-image__type-of-ticket image-slider-image__type-of-ticket--gold"
+                >
+                  <img src="./img/Vector-1.svg" alt="pick" />
+                  <p>&nbsp Золотой</p>
+                </div>
+                <div
+                  class="image-slider-image__privileges image-slider-image__privileges--gold"
+                >
+                  <p>Стоимость: 500 р.</p>
+                  <p>Выигрыш: 65 000 р.</p>
+                  <button
+                    class="choose-ticket--button choose-ticket--button--gold"
+                  >
+                    Оплатить
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image__ticket">
+                <div
+                  class="image-slider-image__type-of-ticket image-slider-image__type-of-ticket--blue"
+                >
+                  <img src="./img/Vector-1.svg" alt="pick" />
+                  <p>&nbsp Бриллиантовый</p>
+                </div>
+                <div
+                  class="image-slider-image__privileges image-slider-image__privileges--blue"
+                >
+                  <p>Стоимость: 1000 р.</p>
+                  <p>Выигрыш: 200 000 р.</p>
+                  <button
+                    class="choose-ticket--button choose-ticket--button--blue"
+                  >
+                    Оплатить
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <img class="footer__logo" src="./img/image 6.svg" alt="logo" />
+      <!-- <div class="footer__space"></div> -->
+      <div class="footer__buttons">
+        <button class="footer__button">О НАС</button>
+        <button class="footer__button">Архив тиражей</button>
+        <button class="footer__button">Парвила</button>
+        <button class="footer__button">Политика конфиденциальности</button>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./index.js"></script>
+</html>
